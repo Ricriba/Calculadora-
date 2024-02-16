@@ -4,14 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="outline-calculator_1.ico"
+            type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akronim&family=Poppins&display=swap"
+            rel="stylesheet">
         <title>Calculadora</title>
     </head>
     <body>
         <div id="calculator">
-            <input type="text" id="display" readonly>
+            <h1>Faça suas conta</h1>
+            <input placeholder="0" type="text" id="display" readonly>
             <div id="keys">
-                <button onclick="arrependToDisplay('+')"
-                    class="operator-btn">+</button>
+                <button onclick="clearDisplay()"
+                    class="operator-btn">ce</button>
                 <button onclick="arrependToDisplay('7')">7</button>
                 <button onclick="arrependToDisplay('8')">8</button>
                 <button onclick="arrependToDisplay('9')">9</button>
@@ -24,16 +32,23 @@
                     class="operator-btn">*</button>
                 <button onclick="arrependToDisplay('1')">1</button>
                 <button onclick="arrependToDisplay('2')">2</button>
-                <button onclick="arrependToDisplay('3')">2</button>
+                <button onclick="arrependToDisplay('3')">3</button>
                 <button onclick="arrependToDisplay('/')"
                     class="operator-btn">/</button>
                 <button onclick="arrependToDisplay('0')">0</button>
                 <button onclick="arrependToDisplay('.')">.</button>
                 <button onclick="calculate()">=</button>
-                <button onclick="clearDisplay()" class="operator-btn">c</button>
+                <button onclick="arrependToDisplay('+')"
+                    class="operator-btn">+</button>
+                <button onclick="arrependToDisplay('(')"
+                    class="operator-btn">(</button>
+                <button onclick="arrependToDisplay(')')"
+                    class="operator-btn">)</button>
+                <button onclick="calculatePorcentage('%')"
+                    class="operator-btn">%</button>
+
             </div>
         </div>
-
         <script src="main.js"></script>
     </body>
 </html>
