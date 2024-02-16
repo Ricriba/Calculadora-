@@ -1,8 +1,7 @@
 //calculadora programa
 
-const display = document.getElementById("display");
-
-function appendTodisplay(input) {
+function arrependToDisplay(input) {
+  const display = document.getElementById("display");
   display.value += input;
 }
 
